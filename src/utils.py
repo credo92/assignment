@@ -3,4 +3,4 @@ def get_male_data():
     
 
 def get_female_data():
-    return 'femaile'
+    return 'female'

@@ -1,6 +1,6 @@
 import pandas as pd
-from src.utils import get_male_data
-from src.utils import get_female_data
+from utils import get_male_data
+from utils import get_female_data
 
 def main():
     data = pd.read_csv("../data/data.csv") 
@@ -21,4 +21,7 @@ def main():
             female_age.append(row['age'])
             female_height.append(row['height'])
             print('FEMALE ', row['gender'] , row['age'] , row['height'])
+    
+    print(get_male_data)
+    print(get_female_data)    
 main()
