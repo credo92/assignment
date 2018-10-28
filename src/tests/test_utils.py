@@ -12,6 +12,8 @@ test_dict = {
 # using util functins
 
 test_data = pd.DataFrame(test_dict)
+test_male_age, test_male_height = get_male_data(test_data)
+test_female_age, test_female_height = get_female_data(test_data)
 
 def test_get_male_data(): 
     assert 1==1
