@@ -1,4 +1,4 @@
-from src.utils import get_split_line
+from utils import get_split_line
 import numpy as np
 import matplotlib.pyplot as plt
 
