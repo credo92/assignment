@@ -1,9 +1,9 @@
-from utils import get_split_line
+import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-
+from utils import get_split_line
 
 def main():
-    file = open('../data/data.csv', 'r')
+    data = pd.read_csv("data/data.csv") 
 
 main()
