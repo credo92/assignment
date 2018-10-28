@@ -24,11 +24,11 @@ def get_female_data(data):
     return female_age, female_height
 
 
-def create_histogram(male_data, female_data):
+def create_histogram(male_data, female_data,attribute_name):
     legend = ['Male', 'Female']
     plt.hist([male_data, female_data], color=['Black', 'Red'], bins=20)
-    plt.xlabel('Age Values')
+    plt.xlabel(attribute_name+ ' Values')
     plt.ylabel('Frequency')
     plt.legend(legend)
-    plt.title('Male/Female Age Distribution')
+    plt.title('Male/Female ' +attribute_name+' Distribution')
     return plt

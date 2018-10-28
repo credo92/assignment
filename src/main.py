@@ -8,8 +8,11 @@ def main():
     
     male_age,male_height = get_male_data(data)
     female_age,female_height = get_female_data(data)
-    plt = create_histogram(male_age, female_age)
+    
+    plt = create_histogram(male_age, female_age,'Age')
     plt.show()
     
+    plt = create_histogram(male_height, female_height,'Height')
+    plt.show()
     
 main()
