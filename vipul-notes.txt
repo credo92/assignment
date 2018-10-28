@@ -1,0 +1,11 @@
+1. Didnt create class, because we are not instantiating any objects nor creating classes
+2. Encapsulated all code in utils
+3. Code runs in main
+4. for test cases, created test data , imported functions and wrote assertions
+5. Followed snake case style convention
+6. created separate functions for getting data, creating hist
+7. used pandas because its easier to read csv with pandas
+8. added pandas in enivron yml file
+9. for histogram, bins = 20 makes histogram legible and easy to follow
+10. frequency on y axis in histogram basically shows how many males/females are there for that respective x variable ( age/height)
+11. used pytest [test_utlis_path] commnad to execute test cases
