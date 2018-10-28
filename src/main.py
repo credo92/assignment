@@ -1,5 +1,6 @@
 import pandas as pd
-
+from src.utils import get_male_data
+from src.utils import get_female_data
 
 def main():
     data = pd.read_csv("../data/data.csv") 
