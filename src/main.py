@@ -11,7 +11,7 @@ def main():
     
     #creating histogram
     legend = ['Male', 'Female']
-    plt.hist([male_age, female_age], color=['Black', 'Red'], bins=50)
+    plt.hist([male_age, female_age], color=['Black', 'Red'], bins=20)
     plt.xlabel(' Age Values')
     plt.ylabel('Frequency')
     plt.legend(legend)
