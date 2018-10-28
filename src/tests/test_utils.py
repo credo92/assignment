@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 from src.utils import get_male_data
 from src.utils import get_female_data
 from src.utils import create_histogram
@@ -15,10 +16,21 @@ test_dict = {
 test_data = pd.DataFrame(test_dict)
 test_male_age, test_male_height = get_male_data(test_data)
 test_female_age, test_female_height = get_female_data(test_data)
-
+# for test histogram
+legend = ['Male', 'Female']
 def test_get_male_data(): 
     assert len(test_male_age) == 1 and len(test_male_height) == 1 and  test_male_age == [32.0] and test_male_height == [1.72]
 def test_get_female_data(): 
     assert len(test_female_age) == 2 and len(test_female_height) == 2 and  test_female_age == [36.0,35.0] and test_female_height == [1.64,1.68]
 def test_create_histogram_age_Distribution():
-    assert 1==0
+    plt.hist([test_male_age, test_female_age], color=['Black', 'Red'], bins=20)
+    plt.xlabel('Age' + " Values") # arg 
+    plt.ylabel("Frequency")
+    plt.legend(legend)
+    plt.title('Male/Female '+ 'Age' +' Distribution') 
+    
+    test_plt_age = create_histogram(test_male_age, test_female_age, 'Age')
+    assert plt == test_plt_age
+    
+def test_create_histogram_height_Distribution():
+    assert 1==0    
