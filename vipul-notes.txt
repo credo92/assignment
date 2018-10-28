@@ -1,3 +1,11 @@
+WRONG: - using files to read_csv and not pandas which makes our lives easier
+	   - no snake case style convention followed
+	   - no meaninful variable names
+	   - everything done in main which caused bloating of code
+	   - code was hard to follow
+	   - utils had only one function whereas it should have all utility functions that get data,create hist , etc
+	   - test_utils was not at all relevant, we weren't testing at all like whether are we parsing data correctly, creating histogram correctly
+	   
 1. Didnt create class, because we are not instantiating any objects nor creating classes
 2. Encapsulated all code in utils
 3. Code runs in main
