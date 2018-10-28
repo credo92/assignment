@@ -10,5 +10,13 @@ def get_male_data(data):
     return male_age, male_height
     
 
-def get_female_data():
-    return 'female'
+def get_female_data(data):
+    female_age = []
+    female_height = []
+    
+    for index, row in data.iterrows():
+        if row['gender'] == 'F':
+            female_age.append(row['age'])
+            female_height.append(row['height'])
+    
+    return female_age, female_height
